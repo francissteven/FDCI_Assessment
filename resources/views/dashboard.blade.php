@@ -14,8 +14,13 @@
         <button type="button" class="btn btn-outline-secondary btn-sm mb-3" data-bs-toggle="modal" data-bs-target="#addContact">Add Contact</button>
         
         <div class="mb-3">
-            <input type="text" id="search" class="form-control" placeholder="Search Contacts">
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="text" id="search" class="form-control" placeholder="Search Contacts">
+                </div>
+            </div>
         </div>
+        
 
         <div id="contactsTable">
             <table class="table table-bordered">
@@ -40,8 +45,7 @@
             </nav>
         </div>
     </div>        
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
     <script>
         $(document).ready(function () {
             $('#search').on('keyup', function () {
